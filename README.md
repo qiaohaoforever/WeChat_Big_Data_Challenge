@@ -6,6 +6,13 @@
 
 赛题数据介绍： https://algo.weixin.qq.com/problem-description
 
+## **idea**
+
+- 根据auc权重大小，针对性研究对应模型；read_comment: 4, like: 3, click_avatar: 2, forward: 1, favorite: 1, comment: 1, follow: 1
+- 数据分为user_action.csv: 用户行为表、feed_info.csv: Feed信息表、feed_embeddings.csv: Feed向量表(这是什么、怎么用)，从个人用户行为考虑；
+    - 同一ID不同设备是否为不同用户操作；
+    - 播放停留时间过长就是没有看了；
+
 ## **1. 环境配置**
 
 - pandas>=1.0.5
